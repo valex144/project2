@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas</title>
+    <script src="https://kit.fontawesome.com/d0f64607f2.js" crossorigin="anonymous"></script>
+    <link rel = "stylesheet" href = "producestilos.css">
+    <meta name ="viewport" content = "width=device-width, user-scalable-no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+    <div class = contenedor>
+        <header>
+            <nav class="barra">
+
+                <div class="navv">
+                    <h1 id="inicio">MiDINO Shop</h1>
+                   
+                    <div class="iconos">
+                        
+                        <a class="icono" target="_blank" href="index.html">
+                            <i class="fa-solid fa-house-chimney "></i>
+                        </a>
+                        <a class="icono" target="_blank" href="compras.html">
+                            <i class="fa-solid fa-cart-shopping "></i>
+                        </a>
+                        <a class="icono" target="_blank" href="https://wa.link/m6f2wn">
+                            <i class="fa-brands fa-whatsapp "></i>
+                        </a>
+                        
+                        <div class ="busca">
+                            <input type="text" class="buscador" placeholder="buscar producto">
+                            <button class="buscar">Buscar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+             
+        </header>
+
+        <div class="banner" >
+            <div class="contenido">
+            </div>
+
+        </div>
+    </div>   
+
+    <button id= "boton" onclick="cambiar()">Click para una sorpresa</button>
+
+    <div onmouseover ="sombra()" onmouseout="sinsombra()" id="display">
+        <img id="imagengrande" src="#" alt="20% de descuento en la primera compra">
+    </div>
+
+
+    <section class="carousel">
+
+
+        <div class="caja">
+            <div class="imagen">
+                <img onclick="visualizar(this)" src="imagenes/descargar (2).jfif" >
+                <div class="hover">
+                    <a href="#" class="comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class=" detalles">
+                <div class="type">
+                    <a href="#">Separadores de hojas 100% ecológicos - Pack 6 unidades</a>
+                </div>
+                <a ref="#" class="precio">S/.10</a>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="imagen">
+                <img onclick="visualiza(this)" src="imagenes/descargar.jfif" id="img1">
+                <div class="hover">
+                    <a href="#" class="comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class=" detalles">
+                <div class="type">
+                    <a href="#">Pack x3 libreta artesanales con forro tejido a mano y hojas gruesas blancas recicladas</a>
+                </div>
+                <a ref="#" class="precio">S/.80</a>
+            </div>
+        </div>
+
+        <div class="caja">
+            <div class="imagen">
+                <img onclick="visualiza(this)" src="imagenes/descargar (1).jfif" id="img1">
+                <div class="hover">
+                    <a href="#" class="comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class=" detalles">
+                <div class="type">
+                    <a href="#">Libreta artesanal con forro tejido a mano y hojas gruesas blancas recicladas</a>
+                </div>
+                <a ref="#" class="precio">S/.30</a>
+            </div>
+        </div>
+
+        <div class="caja">
+            <div class="imagen">
+                <img onclick="visualiza(this)" src="imagenes/descargar (2).jfif" alt="1">
+                <div class="hover">
+                    <a href="#" class="comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class=" detalles">
+                <div class="type">
+                    <a href="#">Separadores de hojas 100% ecológicos - Pack 6 unidades</a>
+                </div>
+                <a ref="#" class="precio">S/.10</a>
+            </div>
+        </div>
+
+        <div class="caja">
+            <div class="imagen">
+                <img onclick="visualiza(this)" src="imagenes/Forget me nots embriodery bag.jfif" alt="1">
+                <div class="hover">
+                    <a href="#" class="comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class=" detalles">
+                <div class="type">
+                    <a href="#">Bolsa floral reutilizable tejido a mano </a>
+                </div>
+                <a ref="#" class="precio">S/.20</a>
+            </div>
+        </div>
+
+        <div class="caja">
+            <div class="imagen">
+                <img onclick="visualiza(this)" src="imagenes/descargar (1).jfif" alt="1">
+                <div class="hover">
+                    <a href="#" class="comprar">COMPRAR</a>
+                </div>
+            </div>
+            <div class=" detalles">
+                <div class="type">
+                    <a href="#">Libreta artesanal con forro tejido a mano y hojas gruesas blancas recicladas</a>
+                </div>
+                <a ref="#" class="precio">S/.30</a>
+            </div>
+        </div>
+        
+    </section> 
+
+    <section id="datos">
+        <h1>Si desea saber más sobre nuestra página, ingrese sus datos</h1>
+        <form action="#" method="get">       
+            <label for = "nombre"> Nombre: </label>
+            <input type="text" id = "nombre" value="">
+            <label for = "apellido"> Apellido: </label>
+            <input type="text" id = "apellido" value="">
+            <label for = "correo"> Correo: </label>
+            <input type="text" id = "correo" value="...@gmail.com">
+        </form>
+        <button onclick="Agregar()">Enviar</button>
+
+
+    </section>
+
+
+
+    <script src = "productos.js"></script>
+</body>
+</html>
